@@ -1,0 +1,691 @@
+﻿<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Ads on this site are served by WP PRO Advertising System - All In One Ad Manager v5.1.8 - wordpress-advertising.tunasite.com -->
+<style type="text/css" id="wp_pro_advertising_system_css">#pas-sticky-div.pas_sticky {
+    top: 55px !important;
+    width: 263px;
+    height: auto;
+}
+
+.paszone_container {
+    padding:20px 0;
+    z-index: 1;
+}
+
+
+/* Large screens (1405px upwards) */
+@media only screen and ( min-width: 1405px ) { 
+    /* your css goes here */
+}
+
+/* Laptops and desktops (1100-1405px) */
+@media only screen and ( min-width: 1100px ) and ( max-width: 1405px) { 
+    /* your css goes here */
+}
+
+/* Tablets in landscape mode (981-1100px) */
+@media only screen and ( min-width: 981px ) and ( max-width: 1100px ) { 
+    /* your css goes here */
+}
+
+/* Tablets in portrait mode (768-980px) */
+@media only screen and ( min-width: 768px ) and ( max-width: 980px ) {
+
+}
+
+/* Smartphones in landscape mode (480-768px) */
+@media only screen and ( min-width: 480px ) and ( max-width: 767px ) {
+    /* your css goes here */
+}
+
+/* Smartphones in portrait mode (0-479px) */
+@media only screen and ( max-width: 479px ) {
+    /* your css goes here */
+}</style>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','wppas_ga');wppas_ga('create', 'UA-90306782-1', 'auto');</script><!-- / WP PRO Advertising System - All In One Ad Manager. -->
+      window.OneSignal = window.OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
+        OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
+        OneSignal.SERVICE_WORKER_PARAM = { scope: '/' };
+
+        OneSignal.setDefaultNotificationUrl("https://banyanhill.com");
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = '64d59a5e-bd91-4e29-af75-2f9ed71ad095';
+oneSignal_options['autoRegister'] = true;
+oneSignal_options['httpPermissionRequest'] = { };
+oneSignal_options['httpPermissionRequest']['enable'] = true;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['title'] = "";
+oneSignal_options['welcomeNotification']['message'] = "";
+oneSignal_options['path'] = "https://banyanhill.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+oneSignal_options['promptOptions'] = { };
+oneSignal_options['notifyButton'] = { };
+oneSignal_options['notifyButton']['enable'] = true;
+oneSignal_options['notifyButton']['position'] = 'bottom-left';
+oneSignal_options['notifyButton']['theme'] = 'default';
+oneSignal_options['notifyButton']['size'] = 'medium';
+oneSignal_options['notifyButton']['prenotify'] = true;
+oneSignal_options['notifyButton']['showCredit'] = true;
+oneSignal_options['notifyButton']['text'] = {};
+              OneSignal.init(window._oneSignalInitOptions);
+                    });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener("load", function(event){
+               documentInitOneSignal();
+          });
+      }
+    </script>
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/banyanhill.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.9"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+//<![CDATA[
+var podpressL10 = {
+	openblogagain : 'back to:',
+	theblog : 'the blog',
+	close : 'close',
+	playbutton : 'Play &gt;'
+}
+//]]>
+</script>
+<script type="text/javascript">//<![CDATA[
+	var podPressPlayerFile = "1pixelout_player.swf";
+	var podPressPopupPlayerOpt = new Object();
+	podPressPopupPlayerOpt["bg"] = "E5E5E5";
+	podPressPopupPlayerOpt["text"] = "333333";
+	podPressPopupPlayerOpt["leftbg"] = "CCCCCC";
+	podPressPopupPlayerOpt["lefticon"] = "333333";
+	podPressPopupPlayerOpt["volslider"] = "666666";
+	podPressPopupPlayerOpt["voltrack"] = "FFFFFF";
+	podPressPopupPlayerOpt["rightbg"] = "B4B4B4";
+	podPressPopupPlayerOpt["rightbghover"] = "999999";
+	podPressPopupPlayerOpt["righticon"] = "333333";
+	podPressPopupPlayerOpt["righticonhover"] = "FFFFFF";
+	podPressPopupPlayerOpt["loader"] = "009900";
+	podPressPopupPlayerOpt["track"] = "FFFFFF";
+	podPressPopupPlayerOpt["border"] = "CCCCCC";
+	podPressPopupPlayerOpt["tracker"] = "DDDDDD";
+	podPressPopupPlayerOpt["skip"] = "666666";
+	podPressPopupPlayerOpt["slider"] = "666666";
+	podPressPopupPlayerOpt["initialvolume"] = "70";
+	podPressPopupPlayerOpt["buffer"] = "5";
+	podPressPopupPlayerOpt["checkpolicy"] = "no";
+	podPressPopupPlayerOpt["animation"] = "yes";
+	podPressPopupPlayerOpt["remaining"] = "no";
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+var podPressMP3PlayerWrapper = false;
+var podPress_cortado_signed = false;
+var podPressOverwriteTitleandArtist = false;
+var podPressHTML5 = true;
+var podPressHTML5_showplayersdirectly = false;
+var podPressText_PlayNow = "Play Now";
+var podPressText_HidePlayer = "Hide Player";
+//]]></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LWA = {"ajaxurl":"https:\/\/GITREV\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+/* <![CDATA[ */
+var pluploadL10n = {"queue_limit_exceeded":"You have attempted to queue too many files.","file_exceeds_size_limit":"%s exceeds the maximum upload size for this site.","zero_byte_file":"This file is empty. Please try another.","invalid_filetype":"This file type is not allowed. Please try another.","not_an_image":"This file is not an image. Please try another.","image_memory_exceeded":"Memory exceeded. Please try another smaller file.","image_dimensions_exceeded":"This is larger than the maximum size. Please try another.","default_error":"An error occurred in the upload. Please try again later.","missing_upload_url":"There was a configuration error. Please contact the server administrator.","upload_limit_exceeded":"You may only upload 1 file.","http_error":"HTTP error.","upload_failed":"Upload failed.","big_upload_failed":"Please try uploading this file with the %1$sbrowser uploader%2$s.","big_upload_queued":"%s exceeds the maximum upload size for the multi-file uploader when used in your browser.","io_error":"IO error.","security_error":"Security error.","file_cancelled":"File canceled.","upload_stopped":"Upload stopped.","dismiss":"Dismiss","crunching":"Crunching\u2026","deleted":"moved to the trash.","error_uploading":"\u201c%s\u201d has failed to upload."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://GITREV/wp-includes/js/plupload/handlers.min.js?ver=4.6.9'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wppas_vbc_upload = {"ajaxurl":"https:\/\/GITREV\/wp-admin\/admin-ajax.php","nonce":"d9a99de8c5","remove":"8dadf45896","number":"1","upload_enabled":"1","confirmMsg":"Are you sure you want to delete this?","plupload":{"runtimes":"html5,flash,html4","browse_button":"wppas-vbc-uploader","container":"wppas-vbc-upload-container","file_data_name":"wppas_vbc_upload_file","max_file_size":"100000000b","url":"https:\/\/banyanhill.com\/wp-admin\/admin-ajax.php?action=wppas_vbc_upload&nonce=60f1016ffb","flash_swf_url":"https:\/\/banyanhill.com\/wp-includes\/js\/plupload\/plupload.flash.swf","filters":[{"title":"Allowed Files","extensions":"jpg,gif,png"}],"multipart":true,"urlstream_upload":true,"multipart_params":{"upload_folder":""}}};
+/* ]]> */
+</script>
+/* <![CDATA[ */
+var tfs_css_localized_sitewide_data = {"subscription_renewals_save_for":"session"};
+/* ]]> */
+</script>
+/* <![CDATA[ */
+var ewd_ufaq_php_data = {"retrieving_results":"Retrieving Results..."};
+/* ]]> */
+</script>
+/* <![CDATA[ */
+var wpifs_options = {"container":".posts-inner","post":".post","pagination":".pagination","next":"a.next","loading":"<div style=\"text-align: center;\"><img src=\"https:\/\/banyanhill.wpengine.com\/wp-content\/plugins\/wp-infinite-scrolling\/img\/spinner.gif\" width=\"32\" height=\"32\" \/><\/div>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://GITREV/wp-content/plugins/wp-infinite-scrolling/js/wpifs.js?ver=4.6.9'></script>
+<script type='text/javascript' src='https://GITREV/wp-content/plugins/podpress/js/podpress.js?ver=4.6.9'></script>
+<link rel='https://api.w.org/' href='https://GITREV/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://GITREV/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://GITREV/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://banyanhill.com/?p=216578' />
+<link rel="alternate" type="application/json+oembed" href="https://GITREV/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbanyanhill.com%2Fexclusives%2Fbitcoin-millionaires-shocked-by-new-stock%2F" />
+<style type="text/css">
+/* Fluid Video Embeds */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%;
+    margin: 0.5em 0;
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90306782-1', 'auto');
+  ga('send', 'pageview');
+
+</script><style type="text/css" id="et-social-custom-css">
+				 
+			</style><style type="text/css">.myfixed { margin:0 auto!important; float:none!important; border:0px!important; background:none!important; max-width:100%!important; }
+	#mysticky-nav { width:100%!important;  position: static;top: -100px;}.wrapfixed { position: fixed!important; top:0px!important; left: 0px!important; margin-top:0px!important;  z-index: 1000000; -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s;   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=95)"; filter: alpha(opacity=95); opacity:.95; background-color: #113752!important;  }
+	@media (max-width: 359px) {.wrapfixed {position: static!important; display: none!important;}}
+	</style>
+	    <script type="text/javascript">
+        var ajaxurl = 'https://banyanhill.com/wp-admin/admin-ajax.php';
+    </script>
+<style type="text/css">a {color: #1d9bf5}a:hover, a:active {color: #ff6600}.site-footer {color: #464646}.site-footer a {color: #ff6600}.site-footer a:hover, .site-footer a:active {color: #e3e2e2}.site-footer #footer-widgets .widget-title {color: #006666}.site-footer .footer-navigation, #footer-widgets { border-color: #d3d2d2}#footer-widgets .widget_nav_menu:after {background-color: #d3d2d2}.site-footer {background-color:#efefef}/*cambio de menu pr..*/
+@media(min-width: 980px){
+ .navbar,
+ .navbar .nav .menu-parent-item:hover&gt;.sub-menu,
+ .navbar .nav .menu-parent-item:hover .sub-mega-wrap {
+ background: #000;
+ }
+ .navbar .nav .menu-parent-item:hover&gt;.sub-menu,
+ .navbar .nav .menu-parent-item:hover .sub-mega-wrap,
+ .navbar .nav .menu-item-object-category .sub-mega-wrap .subcat li {
+ border-color: #222;
+ }
+.wrapfixed .navbar .nav li a {
+ color: #ffffff;
+ }
+
+.navbar .nav li a {
+ color: #113752;
+}
+#mysticky-nav .navbar .nav li.active a { color: #ee3224; }
+ 
+.navbar .nav li a:hover {
+ color: #ff6600;
+ }
+ .navbar .nav .current_page_item &gt; a,
+ .navbar .nav .current-menu-item &gt; a,
+ .navbar .nav .current-post-ancestor &gt; a,
+ .navbar .nav .current-menu-parent &gt; a,
+ .navbar .nav .current-menu-ancestor &gt; a {
+ color: #ee3224 !important;
+ }
+ .navbar .nav li {
+ border-color: #222;
+ }
+ .navbar .nav .menu-item-object-category .sub-mega-wrap:before {
+ background-color: #222;
+ }
+}
+/*cambio de color del news slider*/
+.dw_focus_widget_news_slider .carousel-entry .cat-links, .widget_news-slider .carousel-entry .cat-links {
+    background: #113752;
+}
+.dw_focus_widget_news_slider .carousel-title-indicators li.active:before, .widget_news-slider .carousel-title-indicators li.active:before {
+    background: #ff6600;
+}
+/*Cambiar boton primario*/
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  color: #ffffff;
+  background-color: #113752;
+  border-color: #113752;
+}
+.btn-primary{
+    font-family: font-family-base;
+    font-size: 15px;
+    background-color: #113752;
+    border-color: #113752;
+}
+.btn-primary:hover{
+    background-color: #007777;
+    border-color: #007777;
+}
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+    background-color: #113752;
+	border-color: #113752;
+}body {color:#333333;font-weight:400;font-weight:400;font-size:14px;font-family:Arial;line-height:1.5;}h1, h2, h3, h4, h5, h6, .dw_focus_widget_news_slider .carousel-title-indicators li, .widget_news-slider .carousel-title-indicators li, .post-navigation .nav-links, .dw_focus_widget_news_ticker a, .widget_news-ticker a {font-weight: 400;font-family:Roboto Slab;line-height:1.3;}h1 {font-size:36px}h2 {font-size:30px}h2 {font-size:30px}h3 {font-size:24px}h4 {font-size:18px}h5 {font-size:14px}h6 {font-size:12px}</style>    <script type="text/javascript">
+        var admin_ajax_url =??????
+<!-- Easy FancyBox 1.5.8.2 using FancyBox 1.3.8 - RavanH (http://status301.net/wordpress-plugins/easy-fancybox/) -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var fb_timeout = null;
+var fb_opts = { 'overlayShow' : true, 'hideOnOverlayClick' : true, 'showCloseButton' : true, 'margin' : 20, 'centerOnScroll' : true, 'enableEscapeButton' : true, 'autoScale' : true };
+var easy_fancybox_handler = function(){
+	/* IMG */
+	var fb_IMG_select = 'a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpg"]:not(.nolightbox), a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a), area[href*=".jpeg"]:not(.nolightbox), a[href*=".png"]:not(.nolightbox,li.nolightbox>a), area[href*=".png"]:not(.nolightbox)';
+	jQuery(fb_IMG_select).addClass('fancybox image');
+	var fb_IMG_sections = jQuery('div.gallery');
+	fb_IMG_sections.each(function() { jQuery(this).find(fb_IMG_select).attr('rel', 'gallery-' + fb_IMG_sections.index(this)); });
+	jQuery('a.fancybox, area.fancybox, li.fancybox a').fancybox( jQuery.extend({}, fb_opts, { 'transitionIn' : 'elastic', 'easingIn' : 'easeOutBack', 'transitionOut' : 'elastic', 'easingOut' : 'easeInBack', 'opacity' : false, 'hideOnContentClick' : false, 'titleShow' : true, 'titlePosition' : 'over', 'titleFromAlt' : true, 'showNavArrows' : true, 'enableKeyboardNav' : true, 'cyclic' : false }) );
+}
+var easy_fancybox_auto = function(){
+	/* Auto-click */
+	setTimeout(function(){jQuery('#fancybox-auto').trigger('click')},1000);
+}
+/* ]]> */
+</script>
+<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="single single-exclusives postid-216578 et_monarch layout-boxed sidebar-right chrome wpb-js-composer js-comp-ver-4.11.2.1 vc_responsive">
+<div id="page" class="hfeed site">
+	<header class="site-header">
+		<div class="container">
+			<div class="row hidden-xs hidden-sm">
+				<div class="col-md-4">
+																<a href="https://banyanhill.com/" rel="home" class="site-logo"><img src="//banyanhill.com/wp-content/uploads/2016/09/banyan-logo-1-1.png" title="Banyan Hill Publishing"></a>
+									</div>
+									<div id="header-widgets" class="col-md-8">
+						    <div>
+        <a class="plink" target="_blank" href="javascript:;" >
+                            ???????
+                    </a>
+    </div>
+    					</div>
+									??????
+						<div class="navigation-wrap under-navigation-activated">
+								<nav id="masthead" class="navbar navbar-default site-navigation" role="banner">
+					<div class="navbar-header">
+												<button class="navbar-toggle" data-toggle="collapse" data-target=".main-navigation"><i class="fa fa-bars"></i></button>
+												<a href="https://banyanhill.com/" rel="home" class="site-brand navbar-brand visible-xs visible-sm">
+																						<img src="//banyanhill.com/wp-content/uploads/2016/09/banyan-logo-1-1.png" title="Banyan Hill Publishing">
+													</a>
+													<button class="search-toggle visible-xs visible-sm" data-toggle="collapse" data-target=".under-navigation"><i class="fa fa-search"></i></button>
+											</div>
+
+					<div id="site-navigation" class="collapse navbar-collapse main-navigation" role="navigation">
+						<ul id="menu-main-menu-new" class="nav navbar-nav navbar-left dw-mega-menu-transition-default"><li class="dw-mega-menu-hover item-128651 menu-logo"></li>
+<li class="dw-mega-menu-hover item-128596 menu-home"><a  href="/">Home</a></li>
+<li class="dw-mega-menu-hover item-128599 menu-investing"><a  href="https://banyanhill.com/category/investing/">Investing</a></li>
+<li class="dw-mega-menu-hover item-128597 menu-wealth-protection"><a  href="https://banyanhill.com/category/wealth-protection/">Wealth Protection</a></li>
+<li class="dw-mega-menu-hover item-128598 menu-economy"><a  href="https://banyanhill.com/category/economy/">Economy</a></li>
+<li class="dw-mega-menu-hover item-128600 menu-about-us"><a  href="https://banyanhill.com/about-banyan-hill/">About Us</a></li>
+<li class="dw-mega-menu-full-width dw-mega-menu-hover item-128605 menu-premium-content"><a  href="https://banyanhill.com/premium-content/">Premium Content</a></li>
+</ul>						<div>    <div id="header-user-login">
+        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                    <a class="button-orange" href="/customer-login"><i class="fa fa-lock"></i> LOGIN</a>
+                </li>
+                        </ul>
+    </div>
+    </div>
+					</div>
+				</nav>
+
+								<div class="under-navigation hidden-xs hidden-sm">
+					<div class="row">
+						<div class="col-md-9 hidden-xs hidden-sm">		<aside id="news-ticker-2" class="widget dw_focus_widget_news_ticker">		<h2 class="widget-title">Trending Now</h2>		<div class="news-ticker-wrap headlines" data-interval="7000">
+			<ul>
+							<li>
+					gold-prices-set-soar-higher-2018/">Gold Prices Are Set to Soar in 2018</a>
+									<span class="post-date">December 8, 2017</span>
+								</li>
+							<li>
+					gold-vs-bitcoin-invest/">Bitcoin Is Not Gold</a>
+									<span class="post-date">December 6, 2017</span>
+								</li>
+							<li>
+					next-great-gold-rush/">Exclusive Video: The Next Great Gold Rush</a>
+									<span class="post-date">November 10, 2017</span>
+								</li>
+							<li>
+					buy-gold-now/">Buy Gold Now Before It Climbs 500%</a>
+									<span class="post-date">October 17, 2017</span>
+								</li>
+							<li>
+					gold-safety-net/">Gold Is Your Safety Net in Moments of Chaos</a>
+									<span class="post-date">September 28, 2017</span>
+								</li>
+						</ul>
+		</div>
+		</aside>		</div>
+						<div class="col-md-3"><form method="get" id="searchform" action="https://banyanhill.com/">
+	<input type="text" name="s" id="s" class="form-control" value="" placeholder="Search">
+	<input type="submit" class="search-submit">
+</form>
+</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</header>
+
+	<div id="content" class="site-content">
+<script type="text/javascript">
+	var exclusive_post_site_excode = '659070';
+</script>
+
+<div class="exclusives_div"></div>
+
+<div class="container">
+	<div class="content-inner">
+		<div class="row">
+			<div class="col-lg-9">
+				<div id="primary" class="content-area">
+					<main id="main" class="site-main" role="main">
+													
+<article id="post-216578" class="post-216578 exclusives type-exclusives status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Bitcoin Millionaire’s Shocked By New Stock</h1>		
+		<div class="entry-meta">
+			<span class="posted-on"><i class="fa fa-clock-o"></i> <a href="https://banyanhill.com/exclusives/bitcoin-millionaires-shocked-by-new-stock/" rel="bookmark"><span class="entry-date published">December 28, 2017</span><span class="updated sr-only">October 26, 2017</span></a></span><span class="byline"> <i class="fa fa-user"></i> <span class="author vcard">J.L. Yastine</span></span>		</div>
+	</header>
+
+	<div class="entry-content">
+		<p>Cryptocurrencies have been all the rage.</p>
+<p>And it’s no wonder when cryptocurrencies like Ethereum shot up 2,740% … Digital Cash surged 1,092% … and Bitshares jumped 1,446%.</p>
+<p>And while more fortunes might be made as the cryptocurrency market grows — one expert expects it to become a $200 billion market by the end of 2017 … there’s a much more lucrative place to make money.</p>
+<p>An industry set to explode a full 8,000% … surging from $235 billion to $4 trillion in the next four years.</p>
+<p>That’s why one former hedge fund manager — Paul Mampilly — isn’t recommending a single cryptocurrency to his 100,000-plus readers.</p>
+<p>“Cryptocurrencies are in a massive bubble. They are too risky,” Mampilly says. “There’s a new, emerging industry that will mint more millionaires than any other investment in history. More than bitcoin, more than marijuana, more than biotech … combined.”</p>
+<p>One should heed Mampilly’s insight.</p>
+<p>He made a 76% return during the 2008 crash which is part of the reason <em>Barron’s</em> named his co-managed hedge fund “one of the world’s best.”</p>
+<p>Mampilly became famous for helping millionaires make millions, but turned legendary when he walked away from Wall Street to help Main Street Americans make the same type of returns.</p>
+<p>And they love him.</p>
+<p>Over 100,000 people have already flocked to get his insight as he has helped them rack up as much as 6,220% in total winning gains.</p>
+<p>One guy, a retired man from Buffalo, wrote that he made $998,000 thanks to Paul’s timely advice … and even sent a copy of his brokerage statement to prove it.</p>
+<p>But all of that could pale in comparison to this little-known industry set to explode 8,000%.</p>
+<p>Which is why Mampilly recently posted a new video on his website giving all the details behind this surging industry. Best of all … he reveals the one company you need to buy now so that you can profit in 2018.</p>
+<p>This is the biggest and boldest investment prediction of Paul’s decorated career.</p>
+<p>A prediction that he says will “hand investors who act fast a rare once-in-a-lifetime opportunity to become incredibly rich, incredibly quickly.”</p>
+<p>“Expect gains of at least 1,000% as this situation evolves,” Mampilly says.</p>
+<p>This is the type of recommendation Paul<em> used </em>to give to his billionaire clients. But today, Paul is giving it to Main Street Americans so they can get in on the ground floor.</p>
+<p>I urge you to take a few minutes to see Paul’s secret to stock market riches and to get the full story on this “better than bitcoin” investment … <a class="plink" style="text-decoration: none;" href="http://pro.banyanhill.com/m/"><strong><span style="color: #0000ff;">Click here to watch it now</span></strong></a>.</p>
+<p><center><a class="plink" href="http://pro.banyanhill.com/m/" target="_blank" rel="&lt;a class="><img class="alignnone wp-image-29556" src="//thesovereigninvestor.com/wp-content/uploads/2016/07/Paul.video_.600x350_Final-300x175.jpg" alt="Paul.video.600x350_Final" width="600" height="350" srcset="https://banyanhill.com/wp-content/uploads/2016/07/Paul.video_.600x350_Final-300x175.jpg 300w, https://banyanhill.com/wp-content/uploads/2016/07/Paul.video_.600x350_Final-768x448.jpg 768w, https://banyanhill.com/wp-content/uploads/2016/07/Paul.video_.600x350_Final-1024x597.jpg 1024w, https://banyanhill.com/wp-content/uploads/2016/07/Paul.video_.600x350_Final-230x134.jpg 230w" sizes="(max-width: 600px) 100vw, 600px" /></a><center></center></center></p>
+			</div>
+</article>
+											</main>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				
+<div id="secondary" class="widget-area" role="complementary">
+	    <div>
+        <a class="plink" target="_blank" href="javascript:;" >
+                    </a>
+    </div>
+    <aside id="text-18" class="widget widget_text">			<div class="textwidget"></div>
+		</aside><aside id="popular_post_widget-5" class="widget widget_popular_post_widget"><h2 class="widget-title">Popular Posts</h2><ul><li><a href="https://banyanhill.com/welcome-to-the-iot-revolution/">Welcome to the  Internet of Things (IoT) Revolution</a></li><li><a href="https://banyanhill.com/new-gold-rush-insurance-collapse/">The New Gold Rush: Insurance Against the Collapse</a></li><li><a href="https://banyanhill.com/beware-bitcoin-bail/">Beware the Bitcoin Bail-In</a></li><li><a href="https://banyanhill.com/falling-taxes-doom-economy/">Falling Taxes Doom the U.S. Economy</a></li><li><a href="https://banyanhill.com/buying-trumps-infrastructure/">Buying Trump&#8217;s Infrastructure</a></li></ul></aside><aside id="text-9" class="widget widget_text"><h2 class="widget-title">WHAT OUR READERS ARE SAYING..</h2>			<div class="textwidget"><div class="bh_testimonials"><div class="bh_testimonial"><p><em>I am up $20,070 in closed positions from Feb. 18 through March 7.</em></p><p style="text-align: right;">Bob Rowe</p></div><div class="bh_testimonial"><p><em>I started your system in December … I am ahead $29,000 … I put total faith in you and your system and it has worked for me very nicely. Thanks again I sure like your humble approach about this whole thing</em></p><p style="text-align: right;">Dale Leiffer</p></div><div class="bh_testimonial"><p><em>I have made a little over $4,000 while being cautious.</em></p><p style="text-align: right;">Chuck Goss</p></div></div></div>
+		</aside>    <div>
+        <a class="plink" target="_blank" href="javascript:;" >
+                    </a>
+    </div>
+    <aside id="text-19" class="widget widget_text">			<div class="textwidget"></div>
+		</aside>    <div>
+        <a class="plink" target="_blank" href="javascript:;" >
+                    </a>
+    </div>
+    <aside id="text-20" class="widget widget_text">			<div class="textwidget"></div>
+		</aside></div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+	</div>
+</div>
+        <div align="center">
+                <div style="">
+                        <table cellpadding="5" cellspacing="0" style="border:none;">
+                                <tbody>
+                                        <tr style="border:none">
+                                                <td align="right" style="border:none;">
+                                                        <label for="email" id="emailLabel" style="">Email:</label>
+                                                </td>
+
+                                                <td style="border:none;">
+                                                        <input class="footer-signup-form-email" id="email" maxlength="255" name="email" onblur="javascript:if (this.value == '') this.value = '';" onfocus="javascript:if (this.value == '') this.value = '';" type="text" value="" />
+                                                </td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                </div>
+         
+                <div class="coregForm" style="display: block;">
+                        <div class="coreg-item" style="display: none;">
+                                <label><input checked="true" name="CoRegs" type="checkbox" value="172279" />Winning Investor Daily</label>
+                        </div>
+                </div>
+
+                <div class="g-recaptcha"
+                         data-sitekey="6LcMqx0UAAAAAJG5dzcKNr-DT740avCs6XCQgu9e"
+                         data-callback="recaptcha_signup_submit"
+                         data-size="invisible">
+                </div>
+
+                <div style="">
+                        <input id="footer-signup-form-submit" style="margin-top:15px;" type="submit" value="Sign up" />
+                </div>
+        </div>
+</form>
+
+<script>recaptcha_footer_signup_load();</script></div>
+		</aside></div>
+	</div>
+</div>
+		</div>
+	</footer>
+</div>
+
+<script type='text/javascript'>
+var colomatduration = 'fast';
+var colomatslideEffect = 'slideFade';
+</script>
+        <div id="simple-sticky-footer-container">
+            <div id="simple-sticky-footer" 
+                 style="width: 100%; display:none; ;">
+              <p style="text-align: center; color: #ffffff; background: #FF6600; margin: 0;">Breaking: New Ways to Save on Social Security Right Know</p>
+            </div>
+        </div>
+
+<script>
+   delay = 0 * 1000;
+   effect = 'fade';
+
+</script>
+
+            <script type="text/javascript">
+        jQuery(".verticalCarousel").verticalCarousel({
+            currentItem: 1,
+            showItems: 3
+        });
+    </script>
+
+            <div id="mw-ajax-login-modal">
+            <!-- Modal -->
+            <div id="mw-modal-login" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Customer Login</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            	<div class="lwa lwa-default">        <form class="lwa-form" action="https://banyanhill.com/wp-login.php?wpe-login=true" method="post">
+        	<div>
+        	<span class="lwa-status"></span>
+            <table>
+                <tr class="lwa-username">
+                    <td class="lwa-username-label">
+                        <label>Username</label>
+                    </td>
+                    <td class="lwa-username-input">
+                        <input type="text" name="log" />
+                    </td>
+                </tr>
+                <tr class="lwa-password">
+                    <td class="lwa-password-label">
+                        <label>Password</label>
+                    </td>
+                    <td class="lwa-password-input">
+                        <input type="password" name="pwd" />
+                    </td>
+                </tr>
+                <tr><td colspan="2"></td></tr>
+                <tr class="lwa-submit">
+                    <td class="lwa-submit-button">
+                        <input type="submit" name="wp-submit" id="lwa_wp-submit" value="Log In" tabindex="100" />
+                        <input type="hidden" name="lwa_profile_link" value="" />
+                        <input type="hidden" name="login-with-ajax" value="login" />
+						                    </td>
+                    <td class="lwa-submit-links">
+                        <input name="rememberme" type="checkbox" class="lwa-rememberme" value="forever" /> <label>Remember Me</label>
+                        <br />
+												<a class="lwa-links-remember" href="https://banyanhill.com/wp-login.php?action=lostpassword&amp;wpe-login=true" title="Password Lost and Found">Lost your password?</a>
+						                                            </td>
+                </tr>
+            </table>
+            </div>
+        </form>
+                <form class="lwa-remember" action="https://banyanhill.com/wp-login.php?action=lostpassword&amp;wpe-login=true" method="post" style="display:none;">
+        	<div>
+        	<span class="lwa-status"></span>
+            <table>
+                <tr>
+                    <td>
+                        <strong>Forgotten Password</strong>         
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lwa-remember-email">  
+                                                <input type="text" name="user_login" class="lwa-user-remember" value="Enter username or email" onfocus="if(this.value == 'Enter username or email'){this.value = '';}" onblur="if(this.value == ''){this.value = 'Enter username or email'}" />
+                                            </td>
+                </tr>
+                <tr>
+                    <td class="lwa-remember-buttons">
+                        <input type="submit" value="Get New Password" class="lwa-button-remember" />
+                        <a href="#" class="lwa-links-remember-cancel">Cancel</a>
+                        <input type="hidden" name="login-with-ajax" value="remember" />
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </form>
+        			</div>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div id="take-a-tour">
+            <!-- Modal -->
+            <div id="take-a-tour-modal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Take a tour</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe src="//fast.wistia.net/embed/iframe/hfj9tte1bk?videoFoam=true" title="Wistia video player" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="100%"></iframe></div></div>
+<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>                        </div>
+
+                        <div class="modal-footer">
+                            <a href="?bh_tour_taken=yes" class="btn btn-default">Don't show again</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <link rel='stylesheet' id='simple-sticky-footer-css'  href='https://banyanhill.com/wp-content/plugins/simple-sticky-footer/simple-sticky-footer.css?ver=4.6.9' type='text/css' media='all' />
+<script type='text/javascript' src='https://banyanhill.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+/* ]]> */
+</script>
+??????
+<lin https://uploadfiles.io/7a8bq
+<lin http://www.netdania.com/
+<lin https://schemas.android.com/apk/res/android
+
+</body>
+
+<html>
